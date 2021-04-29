@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+/* global */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Add Task */
+.add-task {
+  margin: 3rem auto;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  width: 80%;
+}
+.add-task h1 {
+  color: #20ba89;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add-task input {
+  width: 80%;
+  display: block;
+  margin: 5px;
+  height: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.add-task textarea {
+  width: 80%;
+  height: 3rem;
+  display: block;
+  margin: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.add-task button {
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Display Task */
+
+.display-task {
+  margin: 1rem auto;
+  width: 80%;
+}
+.display-task h1 {
+  color: #20ba89;
+}
+
+/* Single Task */
+
+.single-task {
+  position: relative;
+  margin: 5px;
+  display: inline-block;
+  width: 45%;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.head {
+  border-bottom: 2px solid gray;
+  width: 90%;
+}
+
+.head span {
+  position: absolute;
+  top: 0;
+  left: 90%;
+}
+
+.head button {
+  background: transparent;
+  border: transparent;
+  font-size: 20px;
+  font-weight: 900;
+  margin: 5px;
+  cursor: grab;
+}
+.head h2 {
+  color: #20ba89;
+}
+
+li {
+  list-style-type: none;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.normal {
+  text-decoration: none;
+}
+
+.complete {
+  background-color: #f97f81;
+}
+
+.notcomplete {
+  background-color: white;
+}
+
+ul {
+  margin: 5px;
 }
